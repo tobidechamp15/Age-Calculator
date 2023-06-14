@@ -10,8 +10,9 @@ dob.addEventListener("change", checkDateValidity);
 
 submitButton.addEventListener("click", calculateAge)
 let calculateButton = document.createElement('button');
-calculateButton.name = "calculate"
+calculateButton.name = "calculate";
 
+// Function Assigned to the submit button.
 
 function calculateAge() {
   let dobInput = document.getElementById("dobInput");
@@ -25,6 +26,7 @@ function calculateAge() {
   result.innerHTML = "Your age is " + age;
   console.log(age);
 }
+//Function to show submit button on Date completion.
 
 function checkDateValidity() {
   let dateInput = document.getElementById("dobInput");
@@ -38,8 +40,7 @@ function checkDateValidity() {
   }
 
 }
-
-
+//Function to show date input onClick. 
 function clickBtn() {
   dob.inputMode.includes('number');
   //dob.innerHTML = 12;
